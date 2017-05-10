@@ -1,6 +1,10 @@
  
 
-main: init code script
+install: init code script
+
+clean :
+	rm -rf ~/liveupdate
+	rm -f /usr/bin/uptex.sh 
 
 init : 
 	mkdir ~/liveupdate
@@ -11,7 +15,5 @@ code :
 
 
 script : 
-	cp ./uptex.sh ~/liveupdate 
-
-clean:
-	rm -f ./*.o 
+	cp ./uptex.sh /usr/bin 
+ 

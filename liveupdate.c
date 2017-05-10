@@ -11,7 +11,7 @@ int main(int argc, char * argv[])
     int d ,i=0;  
     char path[255] ;
     struct inotify_event *event  ;
-    char command[255] = "./uptex.sh  ";
+    char command[255] = "uptex.sh  ";
     
 
     if(argc<=1){
