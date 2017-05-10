@@ -2,9 +2,9 @@
 
 install: code script
 
-clean :
-	rm -rf ~/liveupdate
-	rm -f /usr/bin/uptex.sh  
+uninstall : 
+	rm -f /usr/bin/uptex.sh 
+	rm -f /usr/bin/liveupdate  
 
 code : 
 	gcc ./liveupdate.c  -o  liveupdate 
