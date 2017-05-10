@@ -1,3 +1,3 @@
 #!/bin/bash
-pdflatex $1;
+pdflatex -synctex=1 -interaction=nonstopmode $1;
 echo "done";
